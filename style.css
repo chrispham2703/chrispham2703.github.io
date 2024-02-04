@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.ok-text {
+    font-size: 2em; /* Makes the text larger */
+    font-weight: bold; /* Makes the text bold */
+    margin-top: 20px; /* Adds space between the GIF and the text */
+    text-align: center; /* Center-aligns the text */
+}
+
+
+button {
+    
+    padding: 10px 20px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 5px; 
+    color: white; 
+    background-color: #ff5a5f; 
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
+    
+}
+
+#yes-button {
+    background-color: #00b300;
+    overflow: hidden; /* Ngăn chặn nút Yes chạm vào các phần tử khác */
+    position: relative; /* Đặt một vị trí tương đối để kiểm soát vị trí con bên trong */
+    width: 100px; /* Chiều rộng ban đầu của nút */
+    height: 50px; /* Chiều cao ban đầu của nút */
+    z-index: 2;
+    position: relative; 
+}
+
+#no-button {
+    position: relative;
+    background-color: #ff5a5f;
+    z-index: 1;
+}
+
+#yes-button:hover {
+    background-color: #00e600;
+}
+
+button:hover {
+    background-color: #ff7b81;
+}
+
+button:active {
+    background-color: #f53e47;
+}
